@@ -1,0 +1,25 @@
+.flex-direction{
+display: flex;
+border: solid 0.2em black;
+width: 60%;
+height:8.25em;
+flex-wrap:nowrap;
+}
+.row{
+    flex-direction: row;
+}
+.row-reverse{
+    flex-direction: row-reverse;
+}
+.flex-item{
+    text-align: center;
+    font-size: 1em;
+    padding: 1.5em;
+    color: white;
+    opacity: 0.8;
+}
+.color1{background-color: antiquewhite;}
+.color2{background-color: rgb(69, 41, 114);}
+.color3{background-color: rgb(10, 167, 230);}
+.color4{background-color: antiquewhite;}
+.color5{background-color: rgb(18, 235, 11);}
