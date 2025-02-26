@@ -1,0 +1,26 @@
+.flex-container{
+display: flex;
+border: 1px #ccc solid;
+}
+.flex-end{
+    justify-content:flex-end;
+}
+.center{
+    justify-content: center;
+}
+.space-between{
+    justify-content:space-between ;
+}
+.space-around{
+    justify-content:space-around ;
+}
+.flex-item{
+    text-align:center;
+    font-size:1em;
+    padding: 1.5em;
+    color: azure;
+}
+.color1{background-color: antiquewhite;}
+.color2{background-color: aqua;}
+.color3{background-color: aquamarine;}
+.color4{background-color: blueviolet;}
