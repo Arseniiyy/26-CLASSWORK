@@ -1,6 +1,6 @@
 .card {
     background: linear-gradient(rgb(78, 78, 78), rgb(236, 232, 233));
-    height: 400px;
+    width: 400px;
     background-color: azure;
     display: flex;
     flex-direction: column;
