@@ -1,89 +1,38 @@
-// let year = prompt("какой год?")
-// if (year < 2015) {
-//     alert("старик")
-// } else if (year > 2015) {
-//     alert("бро,это будущее")
-// } else {
-//     alert("хорош")
-// } else {
-//     ("Error")
-// }
-// let value = Number(prompt('Введите число'))
-// if(value == 1){
-//     alert("верно")
-// }else{
-//     alert('err')
+// let b = new Object();
+// let b  = {}
+
+// let studentlist{
+//     name:Егор;
+//     group: Python47;
 // }
 
+// alert(studentList.name)
+// //добавляем в оьбект ключ и значение
+// studentList.surname = "Янюк"
+// //удаление
+// delete studentList.name;
 
-// let accsessAllowed;
-// let age = prompt('Сколько вам лет')
-// if( age > 18){
-//     accsessAllowed = true
-// }else {
-//     accsessAllowed = false
-// }
-// console.log(accsessAllowed)
-
-
-// let name = prompt("какое офицальное название java script")
-// if(name = "ECMAScript"{
-//     alert("Верно")
-// }else{
-//     alert("Не Знаете?ECMAScript")
+// let studentList = {
+//     name: "Егор"
+//     group: "Python47"
 // }
 
 
-// let cifra = prompt("Введи число")
-// if (cifra > 1) {
-//     alert(1)
-// } else if (cifra < 1){
-//     alert(-1)
-// } else if (cifra == 0){
-//     alert(0)
+// //задание 
+// let list = {
+//     food:"Apple",
+//     group:"food/drink"
 // }
-
-
-// let result;
-// if (a+b<4){
-//     result ='Мало';
-// }else{
-//     result = 'Много'
-// }
-
-
-
-// let result = (5+3<18) ? true : false
-// alert(result)
-// // Тернарный оператор
-
-
-
-// let message = (login == "Сотрудник") ? "Привет": (login == "Директор") ? "Здравствуйте": (login == '') ? "Нет логина": ''
-
-
-// let i = 0;
-// while (i < 10){
-//     console.log(i)
-//     i--;
-// }
-
-
-
-
-// let sum = 0
-
-// while(true)[
-//     lot value = +prompt("Введите число",'')
-//     if(!value)break;
-//     sum +-!value
-// ]
-// alert('Сумма' + sim)
-
-
-
-
-// for(let i = 0; i < 10;i++){
-//     if(i % 2 ==0)continue;
-//     alert(i)
+// console.log(list)
+// let x = +prompt("1 - добавить, 2 - удалить")
+// if (x === 1){
+//     let y = prompt("Введите группу")
+//     let b = prompt("Выберите еду")
+//     list[y] = b
+//     console.log(list)
+// }else if (x ===2 ){
+//     console.log(list)
+//     let deleteKey = prompt("Введите группу")
+//     delete list[deleteKey]
+//     console.log(list)
 // }
