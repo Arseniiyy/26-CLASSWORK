@@ -1,86 +1,75 @@
-// let number = prompt("Введите число")
-// number = parseInt(number)
-// for {let i =1; i<=number;i++){
-// if (number % i ===0){
-//     console.log(i)
-// }
-// }
+// // //функция конструктор
+// // //функция консторуктор всегда должна быть с большой буквы
+// // //выполняется с помощью оператора "new"
+// // function Car(brand, model, number, color) {
+// //     this.brand = brand
+// //     this.model = model
+// //     this.number = number
+// //     this.color = color
+// // }
 
-// let number = prompt('Введите число')
-// number = perseInt(number)
+// // let bmwx7m = new Car("BMW", "X7M", "VOR777", "BLACK")
+// // let bmwx5m = new Car("BMW", "X5M", "LLL", "BLACK")
 
-// let factorial = 1;
-// let i = 1;
+// // console.log(bmwx7m)
 
-// while(i <= number){
-//     factorial *-i
-//     i++
-// }
-// console.log("Факторные числа" + number + "равен" + factorial)
-
-
-
-// let a = 2 +2 
-// switch(a){
-//     case 3:
-//     alert("Маловато")
-//     break
-//     case 4:
-//     alert("Вы правы")
-//     break
-//     case 5:
-//     alert("Много")
-//     break
-//     default:
-//         alert("Значение отсутствует")
-
-// }
+// // // //Когда конструкция вызывается как new car происходит следущее
+// // // 1.Создается новый пустой обьект, и он присваивает this
+// // // 2.Выполняется тело функции. Обычно оно модифицирует this, добавляя туда новые свойства
+// // // 3.Возвращается значение this
 
 
+// // function Car(brand, model, number, color)
+// //this = {}
+// //добавление свойства к this
+// // this.brand = brand
+// //return this
 
-// switch (a) {
-//     case 4:
-//         alert("Правильно");
-//         break;
-//     case 3:
-//     case 5:
-//         alert("Не правильно")
-//         break;
-//         default:
-//             alert("Странно")
-// }
-
-// Задача 1
-// let i = prompt("Введите ваш брузер")
-// if(`Chrome,FireFox,Safari,Opera`){
-//     alert(`Okay we support these browers too`)
-// }
-// else if(`others`){
-//     alert(`Okay we not support these browers too`)
-// }
+// // Таким образом 
+// // let bmwx7m = new Car("BMW","X7M","VOR777","BLACK")
+// // Представляет из себя как бы мы писали
+// // let car = {
+// //     brand:"Bmw"
+// //     model:"X7m"
+// // }
 
 
-
-// function printword(value, value1){
-//     alert(value, value1)
-// }
-// printword("YOOOO")
-
-
-// function add(a,b){
-//     return a + b
-// }
-// alert(add(2,200))
+// // let user = new function(){
+// // this name = 'Yan'
+// // this.isAcademy = true;
+// // }
 
 
-//Задание 1
+//  Задание 1
+// function Calculator() {
 
-function add(a,b){
-    return a + b
+//     this.read = function() {
+//       this.one = +prompt('Введите первое число');
+// //       this.two = +prompt('Введите второе число');
+//     };
+//     this.sum = function() {
+//       return this.one + this.two;
+//     };
+//     this.mul = function() {
+//       return this.one * this.two;
+//     };
+//   }
+//   let calculator = new Calculator();
+//   calculator.read();
+//   alert( "Сумма=" + calculator.sum() );
+//   alert( "Умножение=" + calculator.mul() );
+
+
+//Здадание 2
+function Accumulator(startingValue) {
+    this.value = startingValue;
+    
+    this.read = function() {
+        this.value += +prompt('Введите число');
+    };
 }
-alert(add(2,5))
-
-//Задание 2
-Math.max(10, 20){
-    return
-}
+let accumulator = new Accumulator(3);//изменение значения,прибавка числа
+accumulator.read();
+accumulator.read();
+alert(accumulator.value);
+    
