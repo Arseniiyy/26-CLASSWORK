@@ -1,0 +1,4 @@
+function fetchData(endpoint) {
+    return new Promise mn
+
+}

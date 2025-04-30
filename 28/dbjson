@@ -1,0 +1,61 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "Андреева Регина Ринатовна",
+            "email": "regina@gmail.com",
+            "registrationDate": "2022-01-01"
+        },
+
+        {
+            "id": 2,
+            "name": "Акобян Роберт Наполеонович",
+            "email": "robert@gmail.com",
+            "registrationDate": "2022-02-01"
+        },
+
+        {
+            "id": 3,
+            "name": "Пестерев Илья Георгиевич",
+            "email": "ilya@gmail.com",
+            "registrationDate": "2021-02-01"
+        },
+        {
+            "id": 4,
+            "name": "Лебедев Владислав Вадимович",
+            "email": "lebed@gmail.com",
+            "registrationDate": "2019-02-01"
+        }
+    ],
+    "orders": [
+        {
+            "id": 101,
+            "userId": 1,
+            "items": ["Iphone 150 Pro Max", "Губная помада Dior"],
+            "total": 300000,
+            "date": "2025-04-30"
+        },
+        {
+            "id": 102,
+            "userId": 2,
+            "items": ["Прожекторы", "Dior"],
+            "total": 30000,
+            "date": "2025-04-30"
+        },
+        {
+            "id": 103,
+            "userId": 3,
+            "items": ["Двойной биг тести", "Трусы", "Носки с пони"],
+            "total": 1500,
+            "date": "2025-03-30"
+        },
+
+        {
+            "id": 104,
+            "userId": 4,
+            "items": ["Academy TOP ГК Python", "Винстон Синий"],
+            "total": 100000,
+            "date": "2025-02-30"
+        }
+    ]
+}
