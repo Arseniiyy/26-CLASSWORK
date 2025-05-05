@@ -171,42 +171,46 @@
 // }
 
 
-
-class Animal  {
+class Animal {
     constructor(name) {
-        TimeRanges.name = name
+        this.name = name; // Use 'this' to set the instance variable
     }
 
     eat() {
-        console.log(` ${this.name}`)
+        console.log(`${this.name} ест`); // Corrected the output message
     }
-    sleep () {
-        console.log(` ${this.sleep}`ZZZZZZ)
-    }
-    walk (){
-        console.log(` ${this.walk}`бегает)
-    }
-    yells (){
-        console.log(` ${this.yells}`орет)
-    }
-     food (){
-        console.log(` ${this. food}`еда)
-    }
-} 
 
-
-class cat extends Animal{
-    constructor(name, color) {
-        super(name);
-        this.color = color
+    sleep() {
+        console.log(`${this.name} спит`); // Corrected the output message
     }
-    meow(){
-        console.log(` ${this.meow}`)
+
+    walk() {
+        console.log(`${this.name} бегает`); // Corrected the output message
+    }
+
+    yells() {
+        console.log(`${this.name} орет`); // Corrected the output message
+    }
+
+    food() {
+        console.log(`${this.name} еда`); // Corrected the output message
     }
 }
-    let murzik = new cat("Мурзик","Серая")
-    murzik.sleep()
-    murzik.eat()
-    murzik.meow()
-    murzik.yells()
-    murzik. food()
+
+class Cat extends Animal { // Class names should start with an uppercase letter
+    constructor(name, color) {
+        super(name);
+        this.color = color;
+    }
+
+    meow() {
+        console.log(`${this.name} мяукает`); // Corrected the output message
+    }
+}
+
+let murzik = new Cat("Мурзик", "Серая");
+murzik.sleep();
+murzik.eat();
+murzik.meow();
+murzik.yells();
+murzik.food();
